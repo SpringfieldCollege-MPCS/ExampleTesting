@@ -9,7 +9,8 @@ def calculate_cycles_needed(line_length, num_benches, bench_size):
     return benches_needed + height_of_lift
 
 
-
+# @pytest.mark.xfail
+# @pytest.mark.skip
 def test_line(short_list, long_list):
     line = Line(short_list)
     assert(line.take(4) == short_list)
