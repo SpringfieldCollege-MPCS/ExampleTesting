@@ -14,6 +14,6 @@ setup(
     packages=find_packages(include=['mypackage', 'mypackage.*']),
     author="Jeremy Castagno",
     install_requires=[
-       "pytest",
+       "pytest", "rich"
     ]
 )
