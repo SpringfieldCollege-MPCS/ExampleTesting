@@ -6,7 +6,7 @@ from copy import deepcopy
 
 FORMAT = "%(message)s"
 logging.basicConfig(
-    level="NOTSET", format=FORMAT, datefmt="[%X]", handlers=[RichHandler()]
+    level="ERROR", format=FORMAT, datefmt="[%X]", handlers=[RichHandler()]
 )
 
 log = logging.getLogger("rich")

@@ -1,3 +1,10 @@
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+markers = [
+    "lift: All tests for the Lift class.",
+    "short: All tests for lines that are short",
+    "long: All tests for lines that are long",
+]
